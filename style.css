@@ -1,0 +1,73 @@
+body {
+    background: url('images/bg-1.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    position: relative;
+    z-index: 2; 
+    background-color: rgba(255, 255, 255,0.5);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.button {
+    margin: 20px 0;
+}
+
+
+#characterContainer .col-md-4 {
+    margin-bottom: 20px;
+}
+
+#characterContainer .card {
+    background-color: rgba(255, 255, 255); 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#toggleButton {
+    z-index: 3;
+    margin: 0%;
+    
+}
+
+.d-flex {
+    margin-bottom: 1rem;
+}
+
+#filterButton {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        top: 10%;
+    }
+
+    #characterContainer {
+        padding: 10px;
+    }
+
+    #characterContainer .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    button {
+        width: 100%;
+    }
+}
